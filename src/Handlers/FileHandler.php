@@ -49,7 +49,7 @@ class FileHandler implements HandlerInterface
      */
     public function handle(MessageInterface $message)
     {
-        fwrite($this->file, (string)$message."\n", FILE_APPEND);
+        fwrite($this->file, (string)$message."\n");
     }
 
     public function __destruct()

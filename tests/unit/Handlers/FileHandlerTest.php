@@ -8,7 +8,7 @@ class FileHandlerTest extends PHPUnit_Framework_TestCase
 {
     public function testWriteToFile()
     {
-        $msg = 'foo';
+        $msg = '2017-11-04T10:53:02+8:00 [warning] foo';
         $message = $this->createMock(MessageInterface::class);
         $message->expects($this->once())
             ->method('__toString')
