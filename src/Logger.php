@@ -216,9 +216,9 @@ class Logger implements LoggerInterface
 
         foreach ($this->helpers as $helper) {
             if ($helper instanceof HelperInterface) {
-                $data = $helper->help($message);
+                $message = $helper->help($message);
             } elseif (is_callable($helper)) {
-                $data = call_user_func($helper, $message);
+                $message = call_user_func($helper, $message);
             } else {
                 throw new Exception(
                     'encountered bad handler, must be callable or implement '.HelperInterface::class
