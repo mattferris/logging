@@ -5,7 +5,7 @@ use MattFerris\Logging\MessageInterface;
 use Psr\Log\LogLevel;
 use org\bovigo\vfs\vfsStream;
 
-class Helpers_InterpolationHelperTest extends PHPUnit_Framework_TestCase
+class Helpers_InterpolationHelperTest extends PHPUnit\Framework\TestCase
 {
     protected function makeMessage($inmsg, $context, $outmsg)
     {

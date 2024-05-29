@@ -4,7 +4,7 @@ use MattFerris\Logging\Message;
 use Psr\Log\LogLevel;
 use org\bovigo\vfs\vfsStream;
 
-class MessageTest extends PHPUnit_Framework_TestCase
+class MessageTest extends PHPUnit\Framework\TestCase
 {
     public function testConstruct()
     {

@@ -6,7 +6,7 @@ use MattFerris\Logging\Helpers\HelperInterface;
 use MattFerris\Logging\Handlers\HandlerInterface;
 use Psr\Log\LogLevel;
 
-class LoggerTest extends PHPUnit_Framework_TestCase
+class LoggerTest extends PHPUnit\Framework\TestCase
 {
     public function testLogWithCatchallHandler()
     {

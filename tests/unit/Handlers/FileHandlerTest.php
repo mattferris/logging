@@ -4,7 +4,7 @@ use MattFerris\Logging\Handlers\FileHandler;
 use MattFerris\Logging\MessageInterface;
 use org\bovigo\vfs\vfsStream;
 
-class FileHandlerTest extends PHPUnit_Framework_TestCase
+class FileHandlerTest extends PHPUnit\Framework\TestCase
 {
     public function testWriteToFile()
     {
